@@ -144,23 +144,43 @@ button {
   transition: 0.5s all;
 }
 
-.btn.btn-white {
+i {
+  color: var(--primary-color);
+}
+
+.btn-custom {
   padding: 12px 45px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
-  transition: all 0.3s ease-in;
+  transition: 0.3s ease-in;
   border-radius: var(--border-radius);
   border: 2px solid transparent;
+}
+
+.btn-white {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
 
-.btn.btn-white:hover {
+.btn-white:hover {
   background: #fff;
   border: 2px solid #fff;
   color: var(--primary-color);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  opacity: 0.8;
 }
 
 .icon {
@@ -173,10 +193,25 @@ button {
   transition: 0.3s ease-in-out;
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1200px;
-  }
+.container,
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row > * {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 /* >> global */
 
@@ -345,12 +380,12 @@ i {
   color: #eee;
 }
 
-#myBody.dark #toggleSwitch i.gg-sun {
+#dinerBody.dark #toggleSwitch i.gg-sun {
   display: block;
   color: white;
 }
 
-#myBody.dark #toggleSwitch i.gg-moon {
+#dinerBody.dark #toggleSwitch i.gg-moon {
   display: none;
 }
 /* >> toggle switch for light / dark theme */
@@ -671,7 +706,7 @@ button#trigger-overlay {
 /* >> CATEGORIES */
 
 /* << FEATURES */
-.home-services {
+.features {
   position: relative;
 }
 
@@ -717,4 +752,90 @@ button#trigger-overlay {
   grid-template-columns: auto 1fr;
   grid-gap: 30px;
 }
+
+.features__item p {
+  margin-bottom: 0;
+}
 /* >> FEATURES */
+@media (max-width: 1080px) {
+  .box-wrap h4 a {
+    font-size: 20px;
+  }
+}
+
+/* << responsive */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .dinerBanner .dinerBanner__info h3 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .title-h3,
+  .title-h3.two {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+
+  .features__item h4 a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dinerWhy__image {
+    min-height: 200px;
+  }
+
+  .dinerBanner .dinerBanner__info h3 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dinerBanner {
+    min-height: 600px;
+    height: 600px;
+  }
+
+  .dinerBanner .dinerBanner__info h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .dinerCtgr .dinerCtgr__gridCells a h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .dinerCtgr .dinerCtgr__info span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dinerNavBar .search-bar {
+    display: none;
+  }
+  .title-h6 {
+    font-size: 16px;
+  }
+  .title-h3,
+  .title-h3.two {
+    font-size: 30px !important;
+    line-height: 38px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/* >> responsive */

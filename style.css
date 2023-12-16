@@ -215,6 +215,7 @@ i {
 }
 /* >> global */
 
+
 /* << HEADER */
 header {
     position: absolute;
@@ -496,6 +497,7 @@ button#trigger-overlay {
 /* >> nav-overlay */
 /* >> HEADER */
 
+
 /* << BANNER */
 .dinerBanner {
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
@@ -533,9 +535,11 @@ button#trigger-overlay {
 }
 /* >> BANNER */
 
+
 /* << ABOUT US */
 /* no rules */
 /* >> ABOUT US */
+
 
 /* << WHY */
 .dinerWhy {
@@ -608,6 +612,7 @@ button#trigger-overlay {
     opacity: 0.9;
 }
 /* >> WHY */
+
 
 /* << CATEGORIES */
 .dinerCtgr {
@@ -689,6 +694,7 @@ button#trigger-overlay {
 }
 /* >> CATEGORIES */
 
+
 /* << FEATURES */
 .features {
     position: relative;
@@ -741,6 +747,8 @@ button#trigger-overlay {
     margin-bottom: 0;
 }
 /* >> FEATURES */
+
+
 /* << STATISTICS */
 .statistics {
     background: url(img/banner2.jpg);
@@ -779,6 +787,7 @@ button#trigger-overlay {
     max-width: 800px;
 }
 /* >> STATISTICS */
+
 
 /* << NUMBER */
 .number {
@@ -827,6 +836,7 @@ button#trigger-overlay {
     color: var(--heading-color);
 }
 /* >> NUMBER */
+
 
 /* << VIDEO */
 #small-dialog {
@@ -951,6 +961,7 @@ div#small-dialog iframe {
 }
 /* >> VIDEO */
 
+
 /* << BLOG */
 .blog {
     background: var(--bg-grey);
@@ -1067,6 +1078,7 @@ div#small-dialog iframe {
 }
 /* >> BLOG */
 
+
 /* << TESTIMONIAL */
 .testimonials {
     background-color: var(--bg-color);
@@ -1173,6 +1185,7 @@ div#small-dialog iframe {
     background: none;
 }
 /* >> TESTIMONIAL */
+
 
 /* << FOOTER */
 .mini-footer {
@@ -1349,6 +1362,7 @@ ul {
 }
 /* >> FOOTER */
 
+
 /* << SCROLL TO TOP */
 .scroll-to-top {
     display: none;
@@ -1374,6 +1388,7 @@ ul {
     color: #fff;
 }
 /* >> SCROLL TO TOP */
+
 
 /* << responsive */
 @media (min-width: 1400px) {
@@ -1437,7 +1452,7 @@ ul {
         margin-top: 0px;
     }
 
-    .copyright-text {
+    .copyright-text p {
         text-align: center;
     }
 
@@ -1448,10 +1463,13 @@ ul {
     .footer-social-icon {
         text-align: center;
     }
-    .blog .card-body .blog_desc {
-        font-size: 20px;
-        line-height: 30px;
-    }
+}
+
+@media (max-width: 991px) {
+.blog .card-body .blog_desc {
+    font-size: 20px;
+    line-height: 30px;
+}
 }
 
 @media (max-width: 900px) {
@@ -1583,6 +1601,7 @@ ul {
     }
 }
 /* >> responsive */
+
 
 /* << keyframes */
 @keyframes zoomOut {

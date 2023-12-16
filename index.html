@@ -1,504 +1,1004 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <title>Diner</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
 
     <!-- font-awesome 4.7.0 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
 
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
 
     <!-- main CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-</head>
-
-<body id="dinerBody">
+  <body id="dinerBody">
 
     <!-- << HEADER -->
     <header id="dinerHeader">
-        <div class="container">
-            <div class="dinerNavigation">
+      <div class="container">
+        <div class="dinerNavigation">
+          <h1><a class="logo-brand" href="#">Diner </a></h1>
 
-                <h1><a class="logo-brand" href="#">Diner </a></h1>
-
-                <div class="dinerNavBar">
-
-                    <!-- << search bar -->
-                    <div class="search-bar">
-                        <form action="https://wp.w3layouts.com/diner/" method="GET" class="position-relative">
-                            <input type="search" class="search__input" name="s" placeholder="Search here.."
-                                onload="equalWidth()" required="">
-                            <span class="fa fa-search search__icon"></span>
-                        </form>
-                    </div>
-                    <!-- >> search bar -->
-
-                    <!-- << toggle switch for light and dark theme -->
-                    <div class="text-center">
-                        <button class="btn" id="toggleSwitch">
-                            <i class="gg-sun"></i>
-                            <i class="gg-moon"></i>
-                        </button>
-                    </div>
-                    <!-- >> toggle switch for light and dark theme -->
-
-                    <div class="text-center">
-                        <button id="trigger-overlay" type="button">
-                            <span class="fa fa-bars" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="overlay overlay-scale">
-                    <button type="button" class="overlay-close">
-                        <span class="fa fa-times" aria-hidden="true"></span>
-                    </button>
-
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog Posts</a></li>
-                            <li><a href="#">404 page</a></li>
-                            <li><a href="#">Elements</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Landing page</a></li>
-                        </ul>
-                    </nav>
-                </div>
+          <div class="dinerNavBar">
+            <!-- << search bar -->
+            <div class="search-bar">
+              <form
+                action="https://wp.w3layouts.com/diner/"
+                method="GET"
+                class="position-relative"
+              >
+                <input
+                  type="search"
+                  class="search__input"
+                  name="s"
+                  placeholder="Search here.."
+                  onload="equalWidth()"
+                  required=""
+                />
+                <span class="fa fa-search search__icon"></span>
+              </form>
             </div>
+            <!-- >> search bar -->
+
+            <!-- << toggle switch for light and dark theme -->
+            <div class="text-center">
+              <button class="btn" id="toggleSwitch">
+                <i class="gg-sun"></i>
+                <i class="gg-moon"></i>
+              </button>
+            </div>
+            <!-- >> toggle switch for light and dark theme -->
+
+            <!-- << overlay switch -->
+            <div class="text-center">
+              <button id="trigger-overlay" type="button">
+                <span class="fa fa-bars" aria-hidden="true"></span>
+              </button>
+            </div>
+            <!-- >> overlay switch -->
+          </div>
+
+          <!-- << overlay -->
+          <div class="overlay overlay-scale">
+            <button type="button" class="overlay-close">
+              <span class="fa fa-times" aria-hidden="true"></span>
+            </button>
+
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog Posts</a></li>
+                <li><a href="#">404 page</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Landing page</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- >> overlay -->
         </div>
+      </div>
     </header>
     <!-- >> HEADER -->
 
+
     <!-- << BANNER -->
     <section class="dinerBanner">
-        <div class="dinerBanner__content">
-            <div class="container">
-                <div class="dinerBanner__info">
-                    <h3 class="mb-4">
-                        The only thing we love more than food is you! </h3>
-                    <p class="pe-lg-5 mt-md-4 mt-3 mb-0">
-                        Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed
-                        consequuntur illum facere.
-                    </p>
-                    <button class="btn-custom btn-white mt-sm-5 mt-4 me-2" href="#url">
-                        Read More &nbsp <span class="fa fa-chevron-right" aria-hidden="true"></span></button>
-                </div>
-            </div>
+      <div class="dinerBanner__content">
+        <div class="container">
+          <div class="dinerBanner__info">
+            <h3 class="mb-4">The only thing we love more than food is you!</h3>
+            <p class="pe-lg-5 mt-md-4 mt-3 mb-0">
+              Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+              vitae sit.Ea ipsum sed consequuntur illum facere.
+            </p>
+            <button class="btn-custom btn-white mt-sm-5 mt-4 me-2" href="#url">
+              Read More &nbsp
+              <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
+      </div>
     </section>
     <!-- >> BANNER -->
 
 
-
-
     <!-- << ABOUT US -->
-    <div class="py-5">
-        <div class="container py-md-5">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div>
-                        <h6 class="title-h6">
-                            About Us</h6>
-                        <h3 class="title-h3 mb-4">
-                            We found our creative space that is open for you.
-                        </h3>
-                    </div>
-                </div>
-                <div class="col-lg-7 ps-lg-5 mt-lg-0 mt-3">
-                    <p class="mb-0">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.
-                        Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum
-                        dolor amet. Lorem ipsum init Dolor sit, Amet Elit. Dolor ipsum non velit, culpa! Lorem ipsum
-                        init dolor sit.
-                    </p>
-                    <p class="mt-3 mb-0">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, Ultrices in Ligula.
-                        Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum
-                        dolor sit amet.
-                    </p>
-                </div>
+    <section class="py-5">
+      <div class="container py-md-5">
+        <div class="row">
+          <div class="col-lg-5">
+            <div>
+              <h6 class="title-h6">About Us</h6>
+              <h3 class="title-h3 mb-4">
+                We found our creative space that is open for you.
+              </h3>
             </div>
+          </div>
+          <div class="col-lg-7 ps-lg-5 mt-lg-0 mt-3">
+            <p class="mb-0">
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+              Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
+              culpa!Lorem ipsum init dolor sit.
+            </p>
+            <p class="mt-3 mb-0">
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
     <!-- >> ABOUT US -->
 
 
-
-
     <!-- << WHY -->
-    <div class="dinerWhy">
-        <div class="container-fluid px-lg-0">
-            <div class="row align-items-center no-gutters">
+    <section class="dinerWhy">
+      <div class="container-fluid px-lg-0">
+        <div class="row align-items-center no-gutters">
+          <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+            <div class="dinerWhy__image"></div>
+          </div>
 
-                <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
-                    <div class="dinerWhy__image">
-                    </div>
+          <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
+            <div class="p-md-5 p-3">
+              <h6 class="title-h6 two">More than 3000 Restaurants</h6>
+
+              <h3 class="title-h3">Book a table easly at the best price</h3>
+
+              <p class="my-3">
+                Vestibulum ante ipsum primis in faucibus orci luctus turpis
+                sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
+                tesque et libero ut justo ultrices in.
+              </p>
+
+              <div class="dinerWhy__benefits mt-5">
+                <div class="dinerWhy__benefit">
+                  <div class="icon mb-4">
+                    <span class="fa fa-thumbs-up"></span>
+                  </div>
+                  <a href="#url" class="dinerWhy__benefitLink">Best Deals</a>
+                  <p class="mt-2 mb-0">
+                    Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                  </p>
                 </div>
 
-                <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
-                    <div class="p-md-5 p-3">
-
-                        <h6 class="title-h6 two">
-                            More than 3000 Restaurants
-                        </h6>
-
-                        <h3 class="title-h3">
-                            Book a table easly at the best price
-                        </h3>
-
-                        <p class="my-3">
-                            Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet
-                            mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
-                        </p>
-
-                        <div class="dinerWhy__benefits mt-5">
-
-                            <div class="dinerWhy__benefit">
-                                <div class="icon mb-4">
-                                    <span class="fa fa-thumbs-up"></span>
-                                </div>
-                                <a href="#url" class="dinerWhy__benefitLink">Best Deals</a>
-                                <p class="mt-2 mb-0">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
-                            </div>
-
-                            <div class="dinerWhy__benefit">
-                                <div class="icon mb-4">
-                                    <span class="fa fa-cutlery"></span>
-                                </div>
-                                <a href="#url" class="dinerWhy__benefitLink">Best Food</a>
-                                <p class="mt-2 mb-0">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
+                <div class="dinerWhy__benefit">
+                  <div class="icon mb-4">
+                    <span class="fa fa-cutlery"></span>
+                  </div>
+                  <a href="#url" class="dinerWhy__benefitLink">Best Food</a>
+                  <p class="mt-2 mb-0">
+                    Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
     <!-- >> WHY -->
-
-
 
 
     <!-- << CATEGORIES -->
     <section class="dinerCtgr py-5">
-        <div class="container py-md-5 py-2">
-
-            <div class="text-center">
-                <h6 class="title-h6">
-                    What's New
-                </h6>
-                <h3 class="title-h3">
-                    Popular Categories
-                </h3>
-            </div>
-
-            <div class="row justify-content-center">
-
-                <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
-                    <div class="dinerCtgr__img">
-                        <a href="#url"><img src="./img/g1.jpg" class="img img-fluid" alt=""></a>
-                    </div>
-                    <div class="dinerCtgr__info p-md-5 p-4">
-                        <a href="#url">
-                            <h4 class="mt-4 mb-0">
-                                Vegetarian</h4>
-                        </a>
-                        <h6 class="mt-sm-2 mt-1">
-                            <span>$350</span>
-                        </h6>
-                    </div>
-                </div>
-
-                <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
-                    <div class="dinerCtgr__img">
-                        <a href="#url"><img src="./img/g2.jpg" class="img img-fluid" alt=""></a>
-                    </div>
-                    <div class="dinerCtgr__info p-md-5 p-4">
-                        <a href="#url">
-                            <h4 class="mt-4 mb-0">
-                                Drinks</h4>
-                        </a>
-                        <h6 class="mt-sm-2 mt-1">
-                            <span>$550</span>
-                        </h6>
-                    </div>
-                </div>
-
-                <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
-                    <div class="dinerCtgr__img">
-                        <a href="#url"><img src="./img/g3.jpg" class="img img-fluid" alt=""></a>
-                    </div>
-                    <div class="dinerCtgr__info p-md-5 p-4">
-                        <a href="#url">
-                            <h4 class="mt-4 mb-0">
-                                Lunch</h4>
-                        </a>
-                        <h6 class="mt-sm-2 mt-1">
-                            <span>$650</span>
-                        </h6>
-                    </div>
-                </div>
-
-                <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
-                    <div class="dinerCtgr__img">
-                        <a href="#url"><img src="./img/g4.jpg" class="img img-fluid" alt=""></a>
-                    </div>
-                    <div class="dinerCtgr__info p-md-5 p-4">
-                        <a href="#url">
-                            <h4 class="mt-4 mb-0">
-                                Bakery</h4>
-                        </a>
-                        <h6 class="mt-sm-2 mt-1">
-                            <span>$550</span>
-                        </h6>
-                    </div>
-                </div>
-
-                <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
-                    <div class="dinerCtgr__img">
-                        <a href="#url"><img src="./img/g5.jpg" class="img img-fluid" alt=""></a>
-                    </div>
-                    <div class="dinerCtgr__info p-md-5 p-4">
-                        <a href="#url">
-                            <h4 class="mt-4 mb-0">
-                                Desserts</h4>
-                        </a>
-                        <h6 class="mt-sm-2 mt-1">
-                            <span>$750</span>
-                        </h6>
-                    </div>
-                </div>
-
-                <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
-                    <div class="dinerCtgr__img">
-                        <a href="#url"><img src="./img/g6.jpg" class="img img-fluid" alt=""></a>
-                    </div>
-                    <div class="dinerCtgr__info p-md-5 p-4">
-                        <a href="#url">
-                            <h4 class="mt-4 mb-0">
-                                Pizza</h4>
-                        </a>
-                        <h6 class="mt-sm-2 mt-1">
-                            <span>$850</span>
-                        </h6>
-                    </div>
-                </div>
-
-            </div>
-
+      <div class="container py-md-5 py-2">
+        <div class="text-center">
+          <h6 class="title-h6">What's New</h6>
+          <h3 class="title-h3">Popular Categories</h3>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
+            <div class="dinerCtgr__img">
+              <a href="#url"
+                ><img src="./img/g1.jpg" class="img img-fluid" alt=""
+              /></a>
+            </div>
+            <div class="dinerCtgr__info p-md-5 p-4">
+              <a href="#url">
+                <h4 class="mt-4 mb-0">Vegetarian</h4>
+              </a>
+              <h6 class="mt-sm-2 mt-1">
+                <span>$350</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
+            <div class="dinerCtgr__img">
+              <a href="#url"
+                ><img src="./img/g2.jpg" class="img img-fluid" alt=""
+              /></a>
+            </div>
+            <div class="dinerCtgr__info p-md-5 p-4">
+              <a href="#url">
+                <h4 class="mt-4 mb-0">Drinks</h4>
+              </a>
+              <h6 class="mt-sm-2 mt-1">
+                <span>$550</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
+            <div class="dinerCtgr__img">
+              <a href="#url"
+                ><img src="./img/g3.jpg" class="img img-fluid" alt=""
+              /></a>
+            </div>
+            <div class="dinerCtgr__info p-md-5 p-4">
+              <a href="#url">
+                <h4 class="mt-4 mb-0">Lunch</h4>
+              </a>
+              <h6 class="mt-sm-2 mt-1">
+                <span>$650</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
+            <div class="dinerCtgr__img">
+              <a href="#url"
+                ><img src="./img/g4.jpg" class="img img-fluid" alt=""
+              /></a>
+            </div>
+            <div class="dinerCtgr__info p-md-5 p-4">
+              <a href="#url">
+                <h4 class="mt-4 mb-0">Bakery</h4>
+              </a>
+              <h6 class="mt-sm-2 mt-1">
+                <span>$550</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
+            <div class="dinerCtgr__img">
+              <a href="#url"
+                ><img src="./img/g5.jpg" class="img img-fluid" alt=""
+              /></a>
+            </div>
+            <div class="dinerCtgr__info p-md-5 p-4">
+              <a href="#url">
+                <h4 class="mt-4 mb-0">Desserts</h4>
+              </a>
+              <h6 class="mt-sm-2 mt-1">
+                <span>$750</span>
+              </h6>
+            </div>
+          </div>
+
+          <div class="dinerCtgr__gridCells col-lg-4 col-6 mt-4 pt-lg-2">
+            <div class="dinerCtgr__img">
+              <a href="#url"
+                ><img src="./img/g6.jpg" class="img img-fluid" alt=""
+              /></a>
+            </div>
+            <div class="dinerCtgr__info p-md-5 p-4">
+              <a href="#url">
+                <h4 class="mt-4 mb-0">Pizza</h4>
+              </a>
+              <h6 class="mt-sm-2 mt-1">
+                <span>$850</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- >> CATEGORIES -->
 
 
-
-
-
     <!-- << FEATURES -->
     <section class="features py-5">
-        <div class="container py-lg-5 py-md-3 py-3">
-
-            <div class="row justify-content-center">
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="features__item">
-                        <div class="features__item-hd">
-                            <div class="icon">
-                                <span class="fa fa-users"></span>
-                            </div>
-                            <div class="info">
-                                <p>01</p>
-                                <h4><a href="#url">Soup</a></h4>
-                            </div>
-                        </div>
-                        <p class="mt-3">
-                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
-                        </p>
-                    </div>
+      <div class="container py-lg-5 py-md-3 py-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="features__item">
+              <div class="features__item-hd">
+                <div class="icon">
+                  <span class="fa fa-users"></span>
                 </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
-                    <div class="features__item">
-                        <div class="features__item-hd">
-                            <div class="icon">
-                                <span class="fa fa-shield"></span>
-                            </div>
-                            <div class="info">
-                                <p>02</p>
-                                <h4><a href="#url">Drinks</a></h4>
-
-                            </div>
-                        </div>
-                        <p class="mt-3">
-                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
-                        </p>
-                    </div>
+                <div class="info">
+                  <p>01</p>
+                  <h4><a href="#url">Soup</a></h4>
                 </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
-                    <div class="features__item">
-                        <div class="features__item-hd">
-                            <div class="icon">
-                                <span class="fa fa-thermometer-full"></span>
-                            </div>
-                            <div class="info">
-                                <p>03</p>
-                                <h4><a href="#url">Pizza</a></h4>
-                            </div>
-                        </div>
-                        <p class="mt-3">
-                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-                    <div class="features__item">
-                        <div class="features__item-hd">
-                            <div class="icon">
-                                <span class="fa fa-american-sign-language-interpreting"></span>
-                            </div>
-                            <div class="info">
-                                <p>04</p>
-                                <h4><a href="#url">Breakfast</a></h4>
-                            </div>
-                        </div>
-                        <p class="mt-3">
-                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-                    <div class="features__item">
-                        <div class="features__item-hd">
-                            <div class="icon">
-                                <span class="fa fa-paint-brush"></span>
-                            </div>
-                            <div class="info">
-                                <p>05</p>
-                                <h4><a href="#url">Lunch</a></h4>
-                            </div>
-                        </div>
-                        <p class="mt-3">
-                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-                    <div class="features__item">
-                        <div class="features__item-hd">
-                            <div class="icon">
-                                <span class="fa fa-eraser"></span>
-                            </div>
-                            <div class="info">
-                                <p>06</p>
-                                <h4><a href="#url">Dinner</a></h4>
-                            </div>
-                        </div>
-                        <p class="mt-3">
-                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
-                        </p>
-                    </div>
-                </div>
-
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+            <div class="features__item">
+              <div class="features__item-hd">
+                <div class="icon">
+                  <span class="fa fa-shield"></span>
+                </div>
+                <div class="info">
+                  <p>02</p>
+                  <h4><a href="#url">Drinks</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
+            <div class="features__item">
+              <div class="features__item-hd">
+                <div class="icon">
+                  <span class="fa fa-thermometer-full"></span>
+                </div>
+                <div class="info">
+                  <p>03</p>
+                  <h4><a href="#url">Pizza</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <div class="features__item">
+              <div class="features__item-hd">
+                <div class="icon">
+                  <span
+                    class="fa fa-american-sign-language-interpreting"
+                  ></span>
+                </div>
+                <div class="info">
+                  <p>04</p>
+                  <h4><a href="#url">Breakfast</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <div class="features__item">
+              <div class="features__item-hd">
+                <div class="icon">
+                  <span class="fa fa-paint-brush"></span>
+                </div>
+                <div class="info">
+                  <p>05</p>
+                  <h4><a href="#url">Lunch</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <div class="features__item">
+              <div class="features__item-hd">
+                <div class="icon">
+                  <span class="fa fa-eraser"></span>
+                </div>
+                <div class="info">
+                  <p>06</p>
+                  <h4><a href="#url">Dinner</a></h4>
+                </div>
+              </div>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- >> FEATURES -->
 
+    
 
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- switch toggle for light / dark theme -->
     <script src="./js/theme-switch.js"></script>
-
 
     <!-- << modernizr | nav - overlay -->
     <script src="./js/modernizr-2.6.2.min.js"></script>
     <script src="./js/classie.js"></script>
 
     <script>
-        (function () {
-            var container = document.querySelector('div.container'),
-                triggerBttn = document.getElementById('trigger-overlay'),
-                overlay = document.querySelector('div.overlay'),
-                closeBttn = overlay.querySelector('button.overlay-close');
-            transEndEventNames = {
-                'WebkitTransition': 'webkitTransitionEnd',
-                'MozTransition': 'transitionend',
-                'OTransition': 'oTransitionEnd',
-                'msTransition': 'MSTransitionEnd',
-                'transition': 'transitionend'
-            },
-                transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
-                support = { transitions: Modernizr.csstransitions };
+      (function () {
+        var container = document.querySelector("div.container"),
+          triggerBttn = document.getElementById("trigger-overlay"),
+          overlay = document.querySelector("div.overlay"),
+          closeBttn = overlay.querySelector("button.overlay-close");
+        (transEndEventNames = {
+          WebkitTransition: "webkitTransitionEnd",
+          MozTransition: "transitionend",
+          OTransition: "oTransitionEnd",
+          msTransition: "MSTransitionEnd",
+          transition: "transitionend",
+        }),
+          (transEndEventName =
+            transEndEventNames[Modernizr.prefixed("transition")]),
+          (support = { transitions: Modernizr.csstransitions });
 
-            function toggleOverlay() {
-                if (classie.has(overlay, 'open')) {
-                    classie.remove(overlay, 'open');
-                    classie.remove(container, 'overlay-open');
-                    classie.add(overlay, 'close');
-                    var onEndTransitionFn = function (ev) {
-                        if (support.transitions) {
-                            if (ev.propertyName !== 'visibility') return;
-                            this.removeEventListener(transEndEventName, onEndTransitionFn);
-                        }
-                        classie.remove(overlay, 'close');
-                    };
-                    if (support.transitions) {
-                        overlay.addEventListener(transEndEventName, onEndTransitionFn);
-                    }
-                    else {
-                        onEndTransitionFn();
-                    }
-                }
-                else if (!classie.has(overlay, 'close')) {
-                    classie.add(overlay, 'open');
-                    classie.add(container, 'overlay-open');
-                }
+        function toggleOverlay() {
+          if (classie.has(overlay, "open")) {
+            classie.remove(overlay, "open");
+            classie.remove(container, "overlay-open");
+            classie.add(overlay, "close");
+            var onEndTransitionFn = function (ev) {
+              if (support.transitions) {
+                if (ev.propertyName !== "visibility") return;
+                this.removeEventListener(transEndEventName, onEndTransitionFn);
+              }
+              classie.remove(overlay, "close");
+            };
+            if (support.transitions) {
+              overlay.addEventListener(transEndEventName, onEndTransitionFn);
+            } else {
+              onEndTransitionFn();
             }
+          } else if (!classie.has(overlay, "close")) {
+            classie.add(overlay, "open");
+            classie.add(container, "overlay-open");
+          }
+        }
 
-            triggerBttn.addEventListener('click', toggleOverlay);
-            closeBttn.addEventListener('click', toggleOverlay);
-        })();
+        triggerBttn.addEventListener("click", toggleOverlay);
+        closeBttn.addEventListener("click", toggleOverlay);
+      })();
     </script>
     <!-- >> modernizr | nav - overlay -->
 
@@ -507,76 +1007,77 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script src="./js/jquery.counterup.min.js"></script>
     <script>
-        jQuery(document).ready(function ($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
+      jQuery(document).ready(function ($) {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1000,
         });
+      });
     </script>
     <!-- >> jQuery | waypoints | Count-up only 1 time -->
 
     <!-- << magnific-popup -->
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".popup-with-zoom-anim").magnificPopup({
-                type: "inline",
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
 
-                fixedContentPos: false,
-                fixedBgPos: true,
+          fixedContentPos: false,
+          fixedBgPos: true,
 
-                overflowY: "auto",
+          overflowY: "auto",
 
-                closeBtnInside: true,
-                preloader: false,
+          closeBtnInside: true,
+          preloader: false,
 
-                midClick: true,
-                removalDelay: 300,
-                mainClass: "my-mfp-zoom-in",
-            });
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
         });
+      });
     </script>
     <!-- >> magnific-popup -->
 
     <!-- owl carousel | testimonials -->
     <script src="./js/owl.carousel.js"></script>
     <script>
-        jQuery(document).ready(function ($) {
-            "use strict";
-            //  TESTIMONIALS CAROUSEL HOOK
-            $("#customers-testimonials").owlCarousel({
-                loop: true,
-                center: true,
-                items: 1,
-                margin: 0,
-                dots: true,
-                smartSpeed: 450,
-            });
+      jQuery(document).ready(function ($) {
+        "use strict";
+        //  TESTIMONIALS CAROUSEL HOOK
+        $("#customers-testimonials").owlCarousel({
+          loop: true,
+          center: true,
+          items: 1,
+          margin: 0,
+          dots: true,
+          smartSpeed: 450,
         });
+      });
     </script>
 
     <!-- << back to top -->
     <script>
-        window.onscroll = function () {
-            scrollFunction();
-        };
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scrollToTop").style.display = "block";
-            } else {
-                document.getElementById("scrollToTop").style.display = "none";
-            }
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("scrollToTop").style.display = "block";
+        } else {
+          document.getElementById("scrollToTop").style.display = "none";
         }
+      }
 
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <!-- >> back to top -->
-
-</body>
-
+  </body>
 </html>
